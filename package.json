@@ -4,7 +4,7 @@
   "description": "This is a workshop about cypress",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -16,10 +16,13 @@
     "practice",
     "cypress"
   ],
-  "author": "Esteban <esteban.1054@hotmail.com> (http://seon.com/)",
+  "author": "Esteban <esteban.1054@hotmail.com> (https://github.com/Epalaciol/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Epalaciol/cypress-training/issues"
   },
-  "homepage": "https://github.com/Epalaciol/cypress-training#readme"
+  "homepage": "https://github.com/Epalaciol/cypress-training#readme",
+  "devDependencies": {
+    "cypress": "^9.6.0"
+  }
 }
