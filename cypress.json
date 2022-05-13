@@ -1,1 +1,9 @@
-{}
+{
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 20000,
+  "retries": 0,
+  "video": false,
+  "screenshots": false,  
+  "screenshotOnRunFailure": false,
+  "viewportWidth": 1600
+}
