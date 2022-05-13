@@ -12,9 +12,25 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
 // Import commands.js using ES2015 syntax:
-import './commands'
-
+import "./commands";
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+afterEach(() => {
+  // Code to Handle the Sesssions in cypress.
+  // Keep the Session alive when you jump to another test
+  const str = [];
+  cy.getCookies().then((cook) => {
+    cy.log(cook);
+    for (let l = 0; l < cook.length; l++) {
+      if (cook.length > 0 && l == 0) {
+        str[l] = cook[l].name;
+        Cypress.Cookies.preserveOnce(str[l]);
+      } else if (cook.length > 1 && l > 1) {
+        str[l] = cook[l].name;
+        Cypress.Cookies.preserveOnce(str[l]);
+      }
+    }
+  });
+});
