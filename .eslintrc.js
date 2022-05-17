@@ -21,6 +21,7 @@ module.exports = {
     "cypress/no-unnecessary-waiting": "error",
     "cypress/assertion-before-screenshot": "warn",
     "cypress/no-force": "warn",
+    "linebreak-style": 0,
     "no-unused-vars": "warn",
     "require-jsdoc": "warn",
     "max-len": ["error", {"code": 120}],
